@@ -16,6 +16,7 @@ body {
     background-image: url("../imgs/nature-3082832.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 .navbar {
