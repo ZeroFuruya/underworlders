@@ -1,0 +1,361 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-main: Verdana, Geneva, Tahoma, sans-serif;
+    --ff-accent: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-main);
+    background-image: url("../imgs/nature-3082832.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 33, 0);
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    color: white;
+    font-family: var(--ff-accent);
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 0;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: .5rem;
+    padding: 1rem;
+    display: block;
+}
+
+
+/* SECTIONS */
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sec2-container h1 {
+    font-size: 2rem;
+}
+
+.sec2-container p {
+    font-size: 1.3rem;
+}
+
+.sec-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-block: 10%;
+    padding-top: 5%;
+    width: 60%;
+    height: 100%;
+    overflow: auto;
+}
+
+.ac-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.sec2-container img {
+    width: 70vw;
+    height: auto;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sec2-container span {
+    color: rgb(234, 255, 0);
+}
+
+.sec-container span {
+    color: rgb(47, 255, 0);
+}
+
+.sec-container h1 {
+    text-align: start;
+    font-size: 3rem;
+}
+
+.sec-container p {
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.sec-container a {
+    text-align: start;
+    color: rgb(0, 255, 110);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px black;
+    font-family: var(--ff-accent);
+}
+
+.sec-container h1,
+p {
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+.sec2-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-block: 10%;
+    padding-top: 5%;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+}
+
+.sec2-container h1 {
+    font-family: var(--ff-accent);
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+
+/* --------------------HAMBURGER-MENU---------------- */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(74, 33, 0, 0.632);
+    display: none;
+    /* FLEX THIS */
+    z-index: 0;
+}
+
+.bar-container {
+    position: fixed;
+    top: 1.3rem;
+    right: 1rem;
+    height: 3rem;
+    width: 3rem;
+    display: none;
+    /* FLEX THIS */
+    flex-direction: column;
+    align-content: space-between;
+    background-color: rgba(74, 33, 0, 0.632);
+    z-index: 3;
+}
+
+.bars {
+    display: block;
+    margin: .25rem;
+    margin-block: 6px;
+    width: 40px;
+    height: 4px;
+    background-color: azure;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.menu-container {
+    display: none;
+    /* FLEX THIS */
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu-title {
+    font-family: var(--ff-accent);
+    color: white;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 0;
+    padding: 0;
+}
+
+.menu-links ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links li {
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+}
+
+
+/* --------------------HOVERS------------------------ */
+
+.navbar-links li:hover {
+    background-color: rgba(220, 130, 56, 0.776);
+    transition: 250ms;
+}
+
+.menu-links li:hover {
+    background-color: rgba(170, 77, 0, 0.776);
+}
+
+.sec-container a:hover {
+    color: rgb(101, 255, 114);
+    text-decoration: underline;
+    transition: 250ms;
+}
+
+
+/* --------------------TOGGLE------------------------ */
+
+
+/* --------------------WEBKIT------------------------ */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* --------------------MEDIAQUERIES------------------- */
+
+
+/* MOBILE */
+
+@media (max-width: 1024px) {
+    body {
+        background-image: none;
+        background-color: rgb(94, 56, 0);
+    }
+}
+
+@media (max-width: 40em) {
+    body {
+        background-image: url("../imgs/nature2.jpg");
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .sec-container {
+        padding-top: 20%;
+    }
+    .mobile-menu {
+        height: 100%;
+    }
+    .bar-container {
+        display: flex;
+        top: 0.8rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .active {
+        display: flex;
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 770px) {
+    .title {
+        font-size: 2rem;
+    }
+    .menu-title {
+        font-size: 2rem;
+    }
+    .navbar-links li a {
+        font-size: .8rem;
+    }
+    .sec-container h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+    }
+    .sec-container p {
+        text-align: end;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 748px) {
+    .sec-container h1 {
+        font-size: 2rem;
+    }
+    .sec-container p {
+        text-align: end;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .sec-container {
+        padding-top: 40%;
+    }
+    .sec-container h1 {
+        font-size: 1rem;
+    }
+    .sec-container p {
+        font-size: .5rem;
+    }
+}
